@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground">
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:src="@drawable/ic_credit_card"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="4">
+        <TextView
+            android:id="@+id/text_home_amount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="RP. 100.000"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_orange_dark"/>
+        <TextView
+            android:id="@+id/text_home_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_list_size"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Beli pulsa hp sama paket data internet"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ccc"
+            android:layout_marginTop="@dimen/margin_item_list"
+            android:layout_marginBottom="@dimen/margin_item_list"></View>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_gravity="center_vertical"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:src="@drawable/ic_chevron_right"/>
+
+</LinearLayout>
